@@ -5,15 +5,13 @@ using UnityEngine;
 public class ThrashPieceData
 {
     private float _forceFactor;
-  
+    public ThrashPieceData(float value)
+    {
+        _forceFactor = value;
+    }
       public float Get()
         {
             return _forceFactor;
-        }
-
-       public void Set (float value)
-        {
-            _forceFactor = value;
         }
     
 

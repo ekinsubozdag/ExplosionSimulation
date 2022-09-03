@@ -1,19 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PieceOfThrash : MonoBehaviour
 {
-    private ThrashPieceData thrashPieceData;
+    public ThrashPieceData thrashPieceData;
+    private Rigidbody _rb;
 
-    private void Start()
+    public Rigidbody GetRigidbody() => _rb;
+
+    private void Awake()
     {
+        _rb = GetComponent<Rigidbody>();
         InitializeData();
     }
     private void InitializeData()
     {
-        thrashPieceData = new ThrashPieceData();
-        float force = Random.Range(1, 20);
-        thrashPieceData.Set(force);
+        float force = Random.Range(500, 1000);
+        thrashPieceData = new ThrashPieceData(force);
     }
+
 }
+
