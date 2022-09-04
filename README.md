@@ -8,3 +8,7 @@ https://youtu.be/bTUu4ZLtDSs?t=340
 
 
 #Mexican Wave 
+
+
+There are two scenes in project one is for explosion simulation and the other one is for mexican wave simulation.
+
